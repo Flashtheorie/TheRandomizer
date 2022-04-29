@@ -5,7 +5,7 @@
   laisse le hasard choisir
 </h2>
 <div class="flex justify-center w-1/3 mt-20 m-auto">
-<input [(ngModel)]="input" type="text" name="random" id="random" class="w-1/3 shadow-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Ajouter un choix">
+<input (keyup.enter)="createChoice()" [(ngModel)]="input" type="text" name="random" id="random" class="w-1/3 shadow-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Ajouter un choix">
 <button (click)="createChoice()"  type="button" class=" ml-5 inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Ajouter</button>
 </div>
 <ul class="text-center w-1/3 m-auto mt-10" id="ul">
