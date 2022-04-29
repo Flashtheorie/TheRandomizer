@@ -10,14 +10,7 @@ export class AppComponent {
   input: any
   mobile: boolean;
 
-  ngOnInit() {
-    if (window.screen.width < 768) { // 768px portrait
-      this.mobile = false;
-    }
-    else if (window.screen.width >= 768){
-       this.mobile = true;
-    }
-  }
+ 
 
   
   createChoice(){
