@@ -8,6 +8,18 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'random';
   input: any
+  mobile: boolean;
+
+  ngOnInit() {
+    if (window.screen.width < 768) { // 768px portrait
+      this.mobile = false;
+    }
+    else if (window.screen.width >= 768){
+       this.mobile = true;
+    }
+  }
+
+  
   createChoice(){
     let ul = document.querySelector("#ul");
     let li = document.createElement('li');

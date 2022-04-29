@@ -4,7 +4,7 @@
 <h2 class="lg:text-sm font-bold leading-7 text-gray-500 text-center sm:truncate">
   laisse le hasard choisir
 </h2>
-<div class="flex justify-center w-1/3 mt-20 m-auto">
+<div  class="flex justify-center w-3/4 m-auto  sm:w-1/3 lg:w6/12  mt-20 ">
 <input (keyup.enter)="createChoice()" [(ngModel)]="input" type="text" name="random" id="random" class="w-1/3 shadow-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Ajouter un choix">
 <button (click)="createChoice()"  type="button" class=" ml-5 inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Ajouter</button>
 </div>
@@ -14,8 +14,8 @@
 </ul>
 
 <div class="w-1/3 m-auto text-center">
-  <button (click)="randomize()" type="button" class="text-2xl inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+  <button (click)="randomize()" type="button" class="p-9 text-2xl inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
     <!-- Heroicon name: outline/plus-sm -->
-    RANDOMIZE <i class="fa-solid fa-dice fa-lg"></i>
+    <i class="fa-duotone fa-wand-sparkles"></i>
   </button>
 </div>
